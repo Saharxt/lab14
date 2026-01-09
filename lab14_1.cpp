@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 template <typename T>
-void insertionSort(T d[], int N)
-{
+void insertionSort(T d[], int N){
     for (int i = 1; i < N; i++)
     {
         T key = d[i];
@@ -15,9 +14,11 @@ void insertionSort(T d[], int N)
         d[j + 1] = key;
         
         cout << "Pass " << i << ":";
-        for (int k = 0; k < N; k++)
+        for (int k = 0; k < N; k++){
             cout << d[k] << " ";
-            cout << "\n";
+            
+        }
+        cout << "\n";
     }
 }
 
